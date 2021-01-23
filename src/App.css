@@ -24,6 +24,37 @@
   color: white;
 }
 
+.createEventButton {
+  background-color: #ff3e52;
+}
+
+.Menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333333;
+  height: 40px;
+}
+
+.Menu ul {
+  margin-top: 8px;
+}
+
+.Menu li {
+  float: left;
+  display:block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  padding-top: 0px;
+}
+
+
 .App-link {
   color: #61dafb;
 }
