@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Install Project
 
-1) You need to download node.js. \
-2) Get repo from github. \
+1) You need to download node.js.\
+2) Get repo from github.\
 3) run npm install inside the project (cmd) to install all dependencies.\
 4) Finally run npm start inside the project (cmd)
 
