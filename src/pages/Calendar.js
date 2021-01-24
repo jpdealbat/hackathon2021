@@ -24,7 +24,6 @@ const CalendarPage = () => {
             <ul>
                 <li><NavLink to="/" className="Nav_link"> Calendar </NavLink></li>
                 <li><NavLink to="/AddEvent" className="Nav_link"> Create Event </NavLink></li>
-                <li><NavLink to="/AddEvent" className="Nav_link">Log In/ Sign up</NavLink></li>
             </ul>      
           </div>
           <div style={{height: 50}}></div>

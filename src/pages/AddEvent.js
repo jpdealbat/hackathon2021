@@ -27,7 +27,6 @@ const AddEvent = () => {
             <ul>
                 <li><NavLink to="/" className="Nav_link"> Calendar </NavLink></li>
                 <li><NavLink to="/AddEvent" className="Nav_link"> Create Event </NavLink></li>
-                <li><NavLink to="/AddEvent" className="Nav_link">Log In/ Sign up</NavLink></li>
             </ul>      
           </div>
           <div style={{height: 50}}></div>
@@ -48,18 +47,24 @@ const AddEvent = () => {
         <div className="EndDate">
             <span style={{paddingRight: 9}}>End Date:   </span>
             <DateTimePicker 
+              pick12HourFormat= {false} 
                 onChange={(date)=>{
-                  
                   onChangeEndDate(date)
                 }}   
                 value={valueEndDate}
                 />
         </div>
+        <p>Select Color:   </p>
         <div className="colorPicker">
           <CirclePicker 
             colors={["#FD3153", "#D93582", "#A04A99", "#635496", "#37527C", "#2F4858"]}
             onChange ={(color)=>{setColor(color.hex)}}
           />
+        </div>
+        <div style={{backgroundColor: color, fontWeight: 'bold', width: 100, height: 100, marginLeft: '46%',
+        borderRadius: 1000, marginBottom: '2%'
+      }}>
+
         </div>
         <div>
           <button className="createEventButton" 
@@ -72,15 +77,13 @@ const AddEvent = () => {
     );
 }
 
-
 const onClickCreate = (name, dateStart, dateEnd, color, history) => {
 
   axios.post('https://600ca15df979dd001745c1b6.mockapi.io/api/events/event',
   {
     "color": color,
-    "from": moment(dateStart).format('YYYY-MM-DDThh:mm:00-00:00'),
-
-    "to": moment(dateEnd).format('YYYY-MM-DDThh:mm:00-00:00'),
+    "from": moment(dateStart).format('YYYY-MM-DDTHH:mm:00-00:00'),
+    "to": moment(dateEnd).format('YYYY-MM-DDTHH:mm:00-00:00'),
     "title": name
   }
   ).then(()=> {
