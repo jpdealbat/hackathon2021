@@ -3,12 +3,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+
 ## Install Project
 
 1) You need to download node.js.
 2) Get repo from github.
 3) run npm install inside the project (cmd) to install all dependencies.
 4) Finally run npm start inside the project (cmd)
+
+## Mock API
+
+We use a Mock API to post and get events https://mockapi.io/projects/600ca15df979dd001745c1b7
+with the endpoint https://600ca15df979dd001745c1b6.mockapi.io/api/events/event
+
 
 ## Available Scripts
 
